@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Counter = () => {
+const Input = () => {
     const [txtValue,setTextValue] = useState("");
     //0이라는 값을 기본값으로 갖는 변수 
     //0이라는 값을 변경시키기 위한 셋넘버
@@ -21,4 +21,4 @@ const Counter = () => {
 
 };
 
-export default Counter;
+export default Input;
