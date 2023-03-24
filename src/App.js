@@ -1,8 +1,10 @@
 import React from "react";
 import './App.css';
 import { useEffect } from 'react';
-
-// import {Routes,Route,Link} from "react-router-dom";
+import ChatGpt from  "./ChatGpt"
+import Detailview from "./Detailview"
+import Detail from "./Detail";
+import {Routes,Route,Link, BrowserRouter} from "react-router-dom";
 
 // import Kakao from "./kakao/Kakao";
 
@@ -14,21 +16,7 @@ import { useEffect } from 'react';
 // import Input2 from "./pages/Input2";
 // import List from "./pages/List";
 //<Link> a 태그 같은것 사용하려면 임포트 두개 해야함
-function App() {
-//   return (
-//     <div className="App">
-// =
-
-//         <div className="App">
-//             <Kakao/>
-//         </div>
-//     </div>
-//   );
-  //스크립트 파일 읽어오기
-
-  
-
-
+function App() {  
   const new_script = src => { 
     return new Promise((resolve, reject) => { 
       const script = document.createElement('script'); 
@@ -54,7 +42,7 @@ function App() {
       kakao.maps.load(() => {
         const mapContainer = document.getElementById('map');
         const options = { 
-          center: new kakao.maps.LatLng(37.70900421117985, 126.570667), //좌표설정
+          center: new kakao.maps.LatLng(37.62452719218404  ,127.66474549315299), //좌표설정
           level: 13
 
         };
@@ -71,19 +59,28 @@ function App() {
     }); 
   }, []);
 
+
+
   return (
+
     <div className="App">
       <div className="mom">   
-            
            <button className="sbtn" >start</button>
-
-
            <div className="Start">
       </div>
 
       </div>
       <div id="map" className="map"/>
+      
+      <ChatGpt />
+      
+      <Link to="/detail"><Detailview/></Link>
+
+
+
     </div>
+
+
   );
 }
 

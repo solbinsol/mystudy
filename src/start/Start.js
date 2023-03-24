@@ -5,7 +5,7 @@ const Start = () =>{
         color: '#202b4257',
         zIndex:'1'
     }}>
-        <img src="logo512.png"></img>    
+ 
     </div>
 }
 

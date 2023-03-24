@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import './ChatGpt.css';
 const Counter = () => {
     const [num,setNumber] = useState(0);
     //0이라는 값을 기본값으로 갖는 변수 
