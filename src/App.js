@@ -5,6 +5,9 @@ import ChatGpt from  "./ChatGpt"
 import Detailview from "./Detailview"
 import Detail from "./Detail";
 
+import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import {MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator} from "@chatscope/chat-ui-kit-react"
+
 import {Routes,Route,Link, BrowserRouter} from "react-router-dom";
 
 // import Kakao from "./kakao/Kakao";
