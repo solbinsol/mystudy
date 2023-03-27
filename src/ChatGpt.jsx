@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import './ChatGpt.css';
+import './ChatGpt.css'
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
-import {MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator} from "@chatscope/chat-ui-kit-react"
+import {MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator} from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = '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';
+const API_KEY = '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';
 
-function ChatGpt() {
-  
-  
+function ChatGPT() {
   const [typing, setTyping] = useState(false);
   const [messages, setMessages] = useState([
     {
@@ -84,10 +82,9 @@ function ChatGpt() {
     });
   }
   
-  
-    return(
-      <div className='ChatGpt'>
-      <div style={{position: "relative", height: "800px", width: "700px"}}>
+  return (
+    <div className='ChatGpt'>
+      <div style={{ height: "100%", width: "400px"}}>
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -101,15 +98,7 @@ function ChatGpt() {
         </MainContainer>
       </div>
     </div>
-
-
-      // <div className="RChat">
-      // <h1>CHat Gpt</h1>
-
-      // <input type="text" className="chat"></input>
-      // </div>
-    
-    )
+  )
 }
 
-export default ChatGpt;
+export default ChatGPT
