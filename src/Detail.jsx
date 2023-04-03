@@ -1,15 +1,14 @@
 import React from "react";
 import './Detail.scss';
 import sample1 from "./sample.jpg";
-import sample2 from "./sample.jpg";
-import sample3 from "./sample.jpg";
+import sample2 from "./sample2.jpg";
+import sample3 from "./sample3.jpg";
 import sample4 from "./sample.jpg";
 
 
 
 
 const Detail = () =>{
-  
     const items = document.querySelectorAll('.slider-item');
     const itemCount = items.length;
     const nextItem = document.querySelector('.next');
@@ -282,7 +281,7 @@ const Detail = () =>{
               </div>
               <div class="column-xs-12 column-md-10">
                 <div class="image-holder">
-                <img src={sample1}/>
+                <img src={sample2}/>
                 </div>
                 <div class="grid">
                   <div class="column-xs-12 column-md-9">
@@ -308,7 +307,7 @@ const Detail = () =>{
               </div>
               <div class="column-xs-12 column-md-10">
                 <div class="image-holder">
-                <img src={sample1}/>
+                <img src={sample3}/>
                 </div>
                 <div class="grid">
                   <div class="column-xs-12 column-md-9">
@@ -368,8 +367,7 @@ const Detail = () =>{
   </div>
 </div>
 </div>
-<script async src="./Dj.js">
-          </script>
+
       </body>
       </html>
 
