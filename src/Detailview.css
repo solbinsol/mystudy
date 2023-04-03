@@ -1,6 +1,6 @@
 h1{ display: none;
 overflow: hidden;}
-p{
+.detail p{
     margin: 15px;
     display: none;
 
